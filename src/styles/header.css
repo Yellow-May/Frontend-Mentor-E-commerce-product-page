@@ -1,0 +1,52 @@
+header {
+	@apply relative w-full max-w-full bg-white p-5 flex items-center justify-start border border-x-0 border-t-0 border-b-blue-light-grayish md:px-28 lg:py-2 lg:px-32;
+}
+
+header.mobile-before {
+	@apply before:content-[''] before:w-full before:h-full before:top-0 before:right-0 before:bg-black before:bg-opacity-75 before:fixed before:z-0;
+}
+
+header > button {
+	@apply mt-1 mr-4 lg:hidden;
+}
+
+header > nav {
+	@apply flex-grow flex items-center lg:space-x-4;
+}
+
+header > nav > div {
+	@apply bg-white p-6 w-2/3 h-full fixed top-0 z-20 transition-all duration-200 ease-linear lg:static lg:h-auto lg:w-auto;
+}
+
+header > nav > div > ul {
+	@apply space-y-4 font-semibold lg:flex lg:space-y-0 lg:space-x-6 lg:mt-2 lg:font-normal lg:text-blue-dark-grayish lg:pb-2;
+}
+
+header > nav > div > ul > li {
+	@apply transition hover:text-blue-very-dark lg:relative lg:after:absolute lg:after:content-[''] lg:after:-bottom-10 lg:after:left-0 lg:after:h-1 lg:after:w-full lg:after:transition lg:hover:after:bg-orange;
+}
+
+header > div.clickables {
+	@apply flex items-center space-x-4 md:space-x-7;
+}
+
+header > div.clickables > button {
+	font-size: 0.25em;
+	@apply relative after:flex after:items-center after:justify-center after:absolute after:-top-2 after:-right-2 after:w-4 after:rounded after:bg-orange after:text-white after:font-semibold;
+}
+
+header > div.clickables > img {
+	@apply w-8 h-8 border border-white rounded-full cursor-pointer hover:border-2 hover:border-orange transition md:w-10 md:h-10;
+}
+
+header > div.cart {
+	@apply bg-white rounded-2xl w-96 max-w-[95%] block absolute top-20 left-1/2 transform -translate-x-1/2 space-x-0 shadow-2xl md:left-3/4 lg:left-[80%];
+}
+
+header > div.cart > h1 {
+	@apply w-full p-6 font-bold border border-x-0 border-t-0 border-b-blue-grayish text-lg;
+}
+
+header > div.cart > div {
+	@apply p-6 h-48 flex flex-col items-center justify-center space-y-7;
+}
