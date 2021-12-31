@@ -13,7 +13,7 @@ const Cart: React.FC<PropsInterface> = props => {
 		state: { amount },
 	} = React.useContext(AppContext);
 	return (
-		<div className={props.visible ? 'cart' : 'hidden'}>
+		<div className={props.visible ? 'cart' : 'hidden'} style={{ transform: 'translateX(-50%)' }}>
 			<h1>Cart</h1>
 			<div>
 				{amount > 0 ? (
