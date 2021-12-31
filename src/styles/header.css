@@ -1,5 +1,5 @@
 header {
-	@apply relative w-full max-w-full bg-white p-5 flex items-center justify-start border border-x-0 border-t-0 border-b-blue-light-grayish md:px-28 lg:py-2 lg:px-32;
+	@apply relative w-full max-w-full bg-white p-5 flex items-center justify-start border-b border-b-blue-grayish md:px-[8.3333335%] lg:py-2;
 }
 
 header.mobile-before {
@@ -31,8 +31,12 @@ header > div.clickables {
 }
 
 header > div.clickables > button {
+	@apply relative;
+}
+
+header > div.clickables > button > span.badge {
 	font-size: 0.25em;
-	@apply relative after:flex after:items-center after:justify-center after:absolute after:-top-2 after:-right-2 after:w-4 after:rounded after:bg-orange after:text-white after:font-semibold;
+	@apply flex items-center justify-center absolute -top-1.5 -right-2 w-4 rounded bg-orange text-white font-semibold;
 }
 
 header > div.clickables > img {
@@ -45,9 +49,17 @@ header > div.cart {
 }
 
 header > div.cart > h1 {
-	@apply w-full p-6 font-bold border border-x-0 border-t-0 border-b-blue-grayish text-lg;
+	@apply w-full p-6 font-bold border-b border-b-blue-grayish text-lg;
 }
 
 header > div.cart > div {
 	@apply p-6 h-48 flex flex-col items-center justify-center space-y-7;
+}
+
+header > div.cart > div > div {
+	@apply w-full flex items-center space-x-4;
+}
+
+header > div.cart > div > button {
+	@apply w-full py-4 bg-orange text-blue-light-grayish rounded-lg;
 }

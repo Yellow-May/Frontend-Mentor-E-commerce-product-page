@@ -1,0 +1,55 @@
+section.item-info {
+	@apply p-7;
+}
+
+section.item-info > h1 {
+	@apply text-orange text-sm font-bold uppercase tracking-widest mb-3;
+}
+
+section.item-info > h2 {
+	@apply text-3xl font-bold mb-5;
+}
+
+section.item-info > p {
+	@apply tracking-wider text-blue-dark-grayish text-justify leading-6 mb-5;
+}
+
+section.item-info > div.first {
+	@apply mb-5 flex justify-between items-center md:flex-col md:justify-start md:items-start;
+}
+
+section.item-info > div.first > div {
+	@apply flex items-center space-x-3;
+}
+
+section.item-info > div.first > div > p {
+	@apply font-bold text-3xl;
+}
+
+section.item-info > div.first > div > span {
+	@apply px-2 py-1 bg-orange-pale text-orange font-bold rounded-lg;
+}
+
+section.item-info > div.first > span {
+	@apply text-lg font-bold text-blue-dark-grayish text-opacity-50 line-through;
+}
+
+section.item-info > div.second {
+	@apply flex flex-col md:flex-row md:items-center md:space-x-2;
+}
+
+section.item-info > div.second > div {
+	@apply mb-4 flex justify-center items-center h-14 bg-blue-light-grayish rounded-lg md:w-1/2 md:mb-0;
+}
+
+section.item-info > div.second > div > button {
+	@apply px-5 min-w-fit;
+}
+
+section.item-info > div.second > div > input {
+	@apply bg-blue-light-grayish text-center font-bold flex-grow;
+}
+
+section.item-info > div.second > button {
+	@apply flex justify-center items-center space-x-3 w-full py-4 text-blue-light-grayish font-bold bg-orange rounded-lg transition-all duration-200 disabled:bg-opacity-75 disabled:pointer-events-none md:flex-grow;
+}

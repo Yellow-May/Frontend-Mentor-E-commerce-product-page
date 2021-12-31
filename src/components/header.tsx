@@ -44,11 +44,9 @@ export default function Header() {
 				</div>
 			</nav>
 			<div className='clickables'>
-				<button
-					title='cart'
-					className={`after:content-['${amount}']`}
-					onClick={() => toggleCart(prev => !prev)}>
+				<button title='cart' onClick={() => toggleCart(prev => !prev)}>
 					<img src={iconCart} alt='cart' className='w-5 h-5' />
+					<span className={amount > 0 ? 'badge' : 'hidden'}>{amount}</span>
 				</button>
 				<img src={imgAvatar} alt='avatar' />
 			</div>

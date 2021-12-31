@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 @import url(./header.css);
 @import url(./footer.css);
+@import url(./item-info.css);
 
 @tailwind base;
 @tailwind components;
@@ -9,10 +10,13 @@
 html,
 body {
 	height: 100%;
-	@apply bg-orange;
 }
 
 #root {
 	min-height: 100%;
-	@apply font-kumbh-sans;
+	@apply font-kumbh-sans flex flex-col;
+}
+
+#root main {
+	@apply mb-10 md:w-5/6 md:mx-auto md:flex-grow;
 }
