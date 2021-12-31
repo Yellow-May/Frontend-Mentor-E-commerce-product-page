@@ -40,6 +40,7 @@ header > div.clickables > img {
 }
 
 header > div.cart {
+	transform: translateX(-50%);
 	@apply bg-white rounded-2xl w-96 max-w-[95%] block absolute top-20 left-1/2 space-x-0 shadow-2xl md:left-3/4 lg:left-[80%];
 }
 
