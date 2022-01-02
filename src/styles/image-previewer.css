@@ -1,0 +1,22 @@
+/* mobile view */
+section.image-previewer.mobile-view {
+	@apply relative overflow-hidden min-h-[411px];
+}
+
+section.image-previewer.mobile-view > div {
+	@apply relative flex transition-all duration-300 ease-linear;
+}
+
+section.image-previewer.mobile-view > div > img {
+	@apply w-full;
+}
+
+section.image-previewer.mobile-view > button {
+	transform: translateY(-50%);
+	@apply absolute left-3 top-1/2 w-10 h-10 bg-white rounded-full flex items-center justify-center disabled:bg-opacity-50;
+}
+
+section.image-previewer.mobile-view > button:last-child {
+	left: unset;
+	@apply right-3;
+}
