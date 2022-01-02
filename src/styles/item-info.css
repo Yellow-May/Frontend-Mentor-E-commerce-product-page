@@ -1,5 +1,5 @@
 section.item-info {
-	@apply p-7 md:px-0;
+	@apply py-2 px-7 md:px-0;
 }
 
 section.item-info > h1 {
@@ -11,11 +11,11 @@ section.item-info > h2 {
 }
 
 section.item-info > p {
-	@apply tracking-wider text-blue-dark-grayish text-justify leading-6 mb-5;
+	@apply tracking-wider text-blue-dark-grayish text-justify leading-6 mb-7;
 }
 
 section.item-info > div.first {
-	@apply mb-5 flex justify-between items-center md:flex-col md:justify-start md:items-start;
+	@apply mb-8 flex justify-between items-center md:flex-col md:justify-start md:items-start;
 }
 
 section.item-info > div.first > div {
