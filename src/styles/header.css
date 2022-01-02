@@ -1,5 +1,5 @@
 header {
-	@apply relative w-full max-w-full bg-white p-5 flex items-center justify-start border-b border-b-blue-grayish md:px-[8.3333335%] lg:py-2;
+	@apply relative z-40 w-full max-w-full bg-white p-5 flex items-center justify-start border-b border-b-blue-grayish md:px-[8.3333335%] lg:py-2;
 }
 
 header.mobile-before {
