@@ -1,5 +1,5 @@
 section.item-info {
-	@apply p-7;
+	@apply p-7 md:px-0;
 }
 
 section.item-info > h1 {
@@ -51,5 +51,5 @@ section.item-info > div.second > div > input {
 }
 
 section.item-info > div.second > button {
-	@apply flex justify-center items-center space-x-3 w-full py-4 text-blue-light-grayish font-bold bg-orange rounded-lg transition-all duration-200 disabled:bg-opacity-75 disabled:pointer-events-none md:flex-grow;
+	@apply flex justify-center items-center space-x-3 w-full py-4 text-blue-light-grayish font-bold bg-orange rounded-lg transition-all duration-200 disabled:bg-opacity-50 disabled:pointer-events-none md:flex-grow;
 }
