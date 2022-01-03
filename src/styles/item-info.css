@@ -1,5 +1,5 @@
 section.item-info {
-	@apply p-7 md:px-0;
+	@apply p-7 lg:px-16;
 }
 
 section.item-info > h1 {
@@ -46,20 +46,8 @@ section.item-info > div.second > div > button {
 	@apply px-5 min-w-fit;
 }
 
-section.item-info > div.second > div > input {
-	@apply bg-blue-light-grayish text-center font-bold flex-grow h-full;
-}
-
-/* Chrome, Safari, Edge, Opera */
-section.item-info > div.second > div > input::-webkit-outer-spin-button,
-section.item-info > div.second > div > input::-webkit-inner-spin-button {
-	-webkit-appearance: none;
-	margin: 0;
-}
-
-/* Firefox */
-section.item-info > div.second > div > input[type='number'] {
-	-moz-appearance: textfield;
+section.item-info > div.second > div > span {
+	@apply bg-blue-light-grayish text-center font-bold flex-grow h-full flex items-center justify-center;
 }
 
 section.item-info > div.second > button {

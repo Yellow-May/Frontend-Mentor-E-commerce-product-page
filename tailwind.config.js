@@ -24,6 +24,9 @@ module.exports = {
 			fontFamily: {
 				'kumbh-sans': ['Kumbh Sans', 'sans-serif'],
 			},
+			screens: {
+				md: '960px',
+			},
 		},
 	},
 	plugins: [],

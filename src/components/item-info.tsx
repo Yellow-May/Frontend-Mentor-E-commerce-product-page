@@ -10,12 +10,6 @@ const ItemInfo = () => {
 	} = React.useContext(AppContext);
 	const [amount, setAmount] = React.useState(0);
 
-	const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-		let value = +e.target.value;
-		if (value < 0) value = 0;
-		setAmount(value);
-	};
-
 	const handlePlus = () => setAmount(prev => ++prev);
 	const handleMinus = () => amount > 0 && setAmount(prev => --prev);
 
@@ -44,7 +38,7 @@ const ItemInfo = () => {
 					<button onClick={handleMinus}>
 						<img src={iconMinus} alt='minus' />
 					</button>
-					<input type='number' min={0} value={amount} onChange={handleChange} />
+					<span>{amount}</span>
 					<button onClick={handlePlus}>
 						<img src={iconPlus} alt='plus' />
 					</button>

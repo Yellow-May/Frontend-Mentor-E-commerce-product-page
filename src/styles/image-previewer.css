@@ -20,3 +20,24 @@ section.image-previewer.mobile-view > button:last-child {
 	left: unset;
 	@apply right-3;
 }
+
+/* desktop view */
+section.image-previewer.desktop-view {
+	@apply p-5;
+}
+
+section.image-previewer.desktop-view > img {
+	@apply rounded-lg mb-7 max-h-[768px];
+}
+
+section.image-previewer.desktop-view > div {
+	@apply flex items-center justify-between;
+}
+
+section.image-previewer.desktop-view > div > button {
+	@apply hover:bg-orange-pale hover:bg-opacity-60 hover:border-2 border-orange rounded-md w-16 h-16 bg-center bg-cover bg-blend-overlay;
+}
+
+section.image-previewer.desktop-view > div > button.current {
+	@apply bg-orange-pale bg-opacity-60 border-2;
+}
