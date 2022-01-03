@@ -3,20 +3,24 @@ section.image-previewer.mobile-view {
 	@apply relative overflow-hidden min-h-[300px];
 }
 
-section.image-previewer.mobile-view > div {
+section.image-previewer.mobile-view > div,
+section.image-previewer.desktop-view > div.modal > div.previewer > div > div {
 	@apply relative flex transition-all duration-300 ease-linear;
 }
 
-section.image-previewer.mobile-view > div > img {
+section.image-previewer.mobile-view > div > img,
+section.image-previewer.desktop-view > div.modal > div.previewer > div > div > img {
 	@apply w-full;
 }
 
-section.image-previewer.mobile-view > button {
+section.image-previewer.mobile-view > button,
+section.image-previewer.desktop-view > div.modal > div.previewer > button {
 	transform: translateY(-50%);
 	@apply absolute left-3 top-1/2 w-10 h-10 bg-white rounded-full flex items-center justify-center disabled:bg-opacity-50;
 }
 
-section.image-previewer.mobile-view > button:last-child {
+section.image-previewer.mobile-view > button:last-child,
+section.image-previewer.desktop-view > div.modal > div.previewer > button:last-child {
 	left: unset;
 	@apply right-3;
 }
@@ -30,14 +34,39 @@ section.image-previewer.desktop-view > img {
 	@apply rounded-lg mb-7 max-h-[768px];
 }
 
-section.image-previewer.desktop-view > div {
+section.image-previewer.desktop-view div.selector {
 	@apply flex items-center justify-between;
 }
 
-section.image-previewer.desktop-view > div > button {
+section.image-previewer.desktop-view div.selector button {
 	@apply hover:bg-orange-pale hover:bg-opacity-60 hover:border-2 border-orange rounded-md w-16 h-16 bg-center bg-cover bg-blend-overlay;
 }
 
-section.image-previewer.desktop-view > div > button.current {
+section.image-previewer.desktop-view div.selector button.current {
 	@apply bg-orange-pale bg-opacity-60 border-2;
+}
+
+/* desktop modal */
+section.image-previewer.desktop-view > div.modal {
+	@apply fixed top-0 left-0 z-50 w-full h-full bg-blue-very-dark bg-opacity-90 flex flex-col items-center justify-center;
+}
+
+section.image-previewer.desktop-view > div.modal > div.previewer {
+	@apply relative mb-7;
+}
+
+section.image-previewer.desktop-view > div.modal > div.previewer > div {
+	@apply overflow-hidden;
+}
+
+section.image-previewer.desktop-view > div.modal > div.previewer > button {
+	@apply -left-6 top-1/2 w-12 h-12;
+}
+
+section.image-previewer.desktop-view > div.modal > div.previewer > button:last-child {
+	@apply -right-6;
+}
+
+section.image-previewer.desktop-view > div.modal > div.selector {
+	@apply space-x-7;
 }
