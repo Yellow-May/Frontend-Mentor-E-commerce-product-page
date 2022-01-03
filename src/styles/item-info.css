@@ -2,11 +2,11 @@ section.item-info {
 	@apply p-7 lg:px-16;
 }
 
-section.item-info > h1 {
+section.item-info > h2 {
 	@apply text-orange text-sm font-bold uppercase tracking-widest mb-3;
 }
 
-section.item-info > h2 {
+section.item-info > h3 {
 	@apply text-3xl font-bold mb-5;
 }
 

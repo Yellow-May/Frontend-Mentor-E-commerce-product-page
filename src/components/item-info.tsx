@@ -20,8 +20,8 @@ const ItemInfo = () => {
 
 	return (
 		<section className='item-info'>
-			<h1>Sneaker Company</h1>
-			<h2>Fall Limited Edition Sneakers</h2>
+			<h2>Sneaker Company</h2>
+			<h3>Fall Limited Edition Sneakers</h3>
 			<p>
 				These low-profile sneakers are your perfect casual wear companion. Featuring a durable
 				rubber outer sole, they’ll withstand everything the weather can offer.

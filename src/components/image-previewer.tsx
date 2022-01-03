@@ -14,7 +14,7 @@ const ImagePreviewer = () => {
 	if (width >= 960)
 		return (
 			<section className='image-previewer desktop-view'>
-				<h1 className='hidden'>Image Preview</h1>
+				<h2 className='hidden'>Image Preview</h2>
 				<img
 					src={productImagesLarge[current].src}
 					alt={productImagesLarge[current].alt}
@@ -41,7 +41,7 @@ const ImagePreviewer = () => {
 
 	return (
 		<section className='image-previewer mobile-view'>
-			<h1 className='hidden'>Image Preview</h1>
+			<h2 className='hidden'>Image Preview</h2>
 			<div style={{ left: width * -current }}>
 				{productImagesLarge.map(({ alt, src }, index) => (
 					<img key={index} src={src} alt={alt} />
