@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/Yellow-May/Frontend-Mentor-E-commerce-product-page)
-- Live Site URL: [Vercel](https://vercel.com/yellow-may/frontend-mentor-e-commerce-product-page)
+- Live Site URL: [Vercel](https://frontend-mentor-e-commerce-product-page.vercel.app/)
 
 ## My process
 
