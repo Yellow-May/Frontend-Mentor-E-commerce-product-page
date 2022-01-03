@@ -9,7 +9,6 @@ export default function App() {
 		<React.Fragment>
 			<Header />
 			<main>
-				<h1 className='hidden'>Sneaker</h1>
 				<ImagePreviewer />
 				<ItemInfo />
 			</main>
