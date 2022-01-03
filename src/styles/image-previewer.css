@@ -1,6 +1,6 @@
 /* mobile view */
 section.image-previewer.mobile-view {
-	@apply relative overflow-hidden min-h-[411px];
+	@apply relative overflow-hidden min-h-[300px];
 }
 
 section.image-previewer.mobile-view > div {

@@ -30,8 +30,8 @@ const ImagePreviewer = () => {
 		<section className='image-previewer mobile-view '>
 			<h1 className='hidden'>Image Preview</h1>
 			<div style={{ left: width * -current }}>
-				{items.map(({ alt, src }) => (
-					<img key={alt} src={src} alt={alt} />
+				{items.map(({ alt, src }, index) => (
+					<img key={index} src={src} alt={alt} />
 				))}
 			</div>
 			<button title='previous' disabled={current === 0} onClick={() => setCurrent(prev => --prev)}>
